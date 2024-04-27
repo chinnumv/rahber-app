@@ -1,0 +1,681 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		177CC6DF2BDBFE6F003C676F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177CC6DE2BDBFE6F003C676F /* AppDelegate.swift */; };
+		177CC6E12BDBFE6F003C676F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177CC6E02BDBFE6F003C676F /* SceneDelegate.swift */; };
+		177CC6E32BDBFE6F003C676F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177CC6E22BDBFE6F003C676F /* ViewController.swift */; };
+		177CC6E62BDBFE6F003C676F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177CC6E42BDBFE6F003C676F /* Main.storyboard */; };
+		177CC6E92BDBFE6F003C676F /* rahberapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 177CC6E72BDBFE6F003C676F /* rahberapp.xcdatamodeld */; };
+		177CC6EB2BDBFE74003C676F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 177CC6EA2BDBFE74003C676F /* Assets.xcassets */; };
+		177CC6EE2BDBFE74003C676F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177CC6EC2BDBFE74003C676F /* LaunchScreen.storyboard */; };
+		177CC6F92BDBFE75003C676F /* rahberappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177CC6F82BDBFE75003C676F /* rahberappTests.swift */; };
+		177CC7032BDBFE75003C676F /* rahberappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177CC7022BDBFE75003C676F /* rahberappUITests.swift */; };
+		177CC7052BDBFE75003C676F /* rahberappUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177CC7042BDBFE75003C676F /* rahberappUITestsLaunchTests.swift */; };
+		177CC7132BDC05BC003C676F /* MockPrototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177CC7122BDC05BC003C676F /* MockPrototype.swift */; };
+		177CC7152BDC0956003C676F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177CC7142BDC0956003C676F /* User.swift */; };
+		177CC7172BDC0967003C676F /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177CC7162BDC0967003C676F /* Course.swift */; };
+		177CC7192BDC17CA003C676F /* CourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177CC7182BDC17CA003C676F /* CourseTableViewCell.swift */; };
+		177CC71B2BDC20AB003C676F /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177CC71A2BDC20AB003C676F /* CustomCollectionViewCell.swift */; };
+		177CC71D2BDC2E1C003C676F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177CC71C2BDC2E1C003C676F /* DetailViewController.swift */; };
+		177E59EF2BDC516F0005F0DD /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177E59EE2BDC516F0005F0DD /* Chapter.swift */; };
+		177E59F12BDC581C0005F0DD /* ChapterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177E59F02BDC581C0005F0DD /* ChapterTableViewCell.swift */; };
+		177E59F32BDC5AD60005F0DD /* Enrollment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177E59F22BDC5AD60005F0DD /* Enrollment.swift */; };
+		179D12092BDD77A90031BB03 /* LoginviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179D12082BDD77A90031BB03 /* LoginviewController.swift */; };
+		179D120B2BDD8A160031BB03 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179D120A2BDD8A150031BB03 /* ProfileViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		177CC6F52BDBFE75003C676F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 177CC6D32BDBFE6F003C676F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 177CC6DA2BDBFE6F003C676F;
+			remoteInfo = rahberapp;
+		};
+		177CC6FF2BDBFE75003C676F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 177CC6D32BDBFE6F003C676F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 177CC6DA2BDBFE6F003C676F;
+			remoteInfo = rahberapp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		177CC6DB2BDBFE6F003C676F /* rahberapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rahberapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		177CC6DE2BDBFE6F003C676F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		177CC6E02BDBFE6F003C676F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		177CC6E22BDBFE6F003C676F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		177CC6E52BDBFE6F003C676F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		177CC6E82BDBFE6F003C676F /* rahberapp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = rahberapp.xcdatamodel; sourceTree = "<group>"; };
+		177CC6EA2BDBFE74003C676F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		177CC6ED2BDBFE74003C676F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		177CC6EF2BDBFE74003C676F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		177CC6F42BDBFE75003C676F /* rahberappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rahberappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		177CC6F82BDBFE75003C676F /* rahberappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rahberappTests.swift; sourceTree = "<group>"; };
+		177CC6FE2BDBFE75003C676F /* rahberappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rahberappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		177CC7022BDBFE75003C676F /* rahberappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rahberappUITests.swift; sourceTree = "<group>"; };
+		177CC7042BDBFE75003C676F /* rahberappUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rahberappUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		177CC7122BDC05BC003C676F /* MockPrototype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPrototype.swift; sourceTree = "<group>"; };
+		177CC7142BDC0956003C676F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		177CC7162BDC0967003C676F /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		177CC7182BDC17CA003C676F /* CourseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTableViewCell.swift; sourceTree = "<group>"; };
+		177CC71A2BDC20AB003C676F /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		177CC71C2BDC2E1C003C676F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		177E59EE2BDC516F0005F0DD /* Chapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
+		177E59F02BDC581C0005F0DD /* ChapterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterTableViewCell.swift; sourceTree = "<group>"; };
+		177E59F22BDC5AD60005F0DD /* Enrollment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enrollment.swift; sourceTree = "<group>"; };
+		179D12082BDD77A90031BB03 /* LoginviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginviewController.swift; sourceTree = "<group>"; };
+		179D120A2BDD8A150031BB03 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		177CC6D82BDBFE6F003C676F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		177CC6F12BDBFE75003C676F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		177CC6FB2BDBFE75003C676F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		177CC6D22BDBFE6F003C676F = {
+			isa = PBXGroup;
+			children = (
+				177CC6DD2BDBFE6F003C676F /* rahberapp */,
+				177CC6F72BDBFE75003C676F /* rahberappTests */,
+				177CC7012BDBFE75003C676F /* rahberappUITests */,
+				177CC6DC2BDBFE6F003C676F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		177CC6DC2BDBFE6F003C676F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				177CC6DB2BDBFE6F003C676F /* rahberapp.app */,
+				177CC6F42BDBFE75003C676F /* rahberappTests.xctest */,
+				177CC6FE2BDBFE75003C676F /* rahberappUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		177CC6DD2BDBFE6F003C676F /* rahberapp */ = {
+			isa = PBXGroup;
+			children = (
+				177CC7112BDC03FD003C676F /* mockLayer */,
+				177CC6DE2BDBFE6F003C676F /* AppDelegate.swift */,
+				177CC6E02BDBFE6F003C676F /* SceneDelegate.swift */,
+				177CC6E22BDBFE6F003C676F /* ViewController.swift */,
+				177CC6E42BDBFE6F003C676F /* Main.storyboard */,
+				177CC6EA2BDBFE74003C676F /* Assets.xcassets */,
+				177CC6EC2BDBFE74003C676F /* LaunchScreen.storyboard */,
+				177CC6EF2BDBFE74003C676F /* Info.plist */,
+				177CC6E72BDBFE6F003C676F /* rahberapp.xcdatamodeld */,
+				177CC7182BDC17CA003C676F /* CourseTableViewCell.swift */,
+				177CC71A2BDC20AB003C676F /* CustomCollectionViewCell.swift */,
+				177CC71C2BDC2E1C003C676F /* DetailViewController.swift */,
+				177E59F02BDC581C0005F0DD /* ChapterTableViewCell.swift */,
+				179D12082BDD77A90031BB03 /* LoginviewController.swift */,
+				179D120A2BDD8A150031BB03 /* ProfileViewController.swift */,
+			);
+			path = rahberapp;
+			sourceTree = "<group>";
+		};
+		177CC6F72BDBFE75003C676F /* rahberappTests */ = {
+			isa = PBXGroup;
+			children = (
+				177CC6F82BDBFE75003C676F /* rahberappTests.swift */,
+			);
+			path = rahberappTests;
+			sourceTree = "<group>";
+		};
+		177CC7012BDBFE75003C676F /* rahberappUITests */ = {
+			isa = PBXGroup;
+			children = (
+				177CC7022BDBFE75003C676F /* rahberappUITests.swift */,
+				177CC7042BDBFE75003C676F /* rahberappUITestsLaunchTests.swift */,
+			);
+			path = rahberappUITests;
+			sourceTree = "<group>";
+		};
+		177CC7112BDC03FD003C676F /* mockLayer */ = {
+			isa = PBXGroup;
+			children = (
+				177CC7122BDC05BC003C676F /* MockPrototype.swift */,
+				177CC7142BDC0956003C676F /* User.swift */,
+				177CC7162BDC0967003C676F /* Course.swift */,
+				177E59EE2BDC516F0005F0DD /* Chapter.swift */,
+				177E59F22BDC5AD60005F0DD /* Enrollment.swift */,
+			);
+			path = mockLayer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		177CC6DA2BDBFE6F003C676F /* rahberapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 177CC7082BDBFE75003C676F /* Build configuration list for PBXNativeTarget "rahberapp" */;
+			buildPhases = (
+				177CC6D72BDBFE6F003C676F /* Sources */,
+				177CC6D82BDBFE6F003C676F /* Frameworks */,
+				177CC6D92BDBFE6F003C676F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = rahberapp;
+			productName = rahberapp;
+			productReference = 177CC6DB2BDBFE6F003C676F /* rahberapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		177CC6F32BDBFE75003C676F /* rahberappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 177CC70B2BDBFE75003C676F /* Build configuration list for PBXNativeTarget "rahberappTests" */;
+			buildPhases = (
+				177CC6F02BDBFE75003C676F /* Sources */,
+				177CC6F12BDBFE75003C676F /* Frameworks */,
+				177CC6F22BDBFE75003C676F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				177CC6F62BDBFE75003C676F /* PBXTargetDependency */,
+			);
+			name = rahberappTests;
+			productName = rahberappTests;
+			productReference = 177CC6F42BDBFE75003C676F /* rahberappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		177CC6FD2BDBFE75003C676F /* rahberappUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 177CC70E2BDBFE75003C676F /* Build configuration list for PBXNativeTarget "rahberappUITests" */;
+			buildPhases = (
+				177CC6FA2BDBFE75003C676F /* Sources */,
+				177CC6FB2BDBFE75003C676F /* Frameworks */,
+				177CC6FC2BDBFE75003C676F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				177CC7002BDBFE75003C676F /* PBXTargetDependency */,
+			);
+			name = rahberappUITests;
+			productName = rahberappUITests;
+			productReference = 177CC6FE2BDBFE75003C676F /* rahberappUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		177CC6D32BDBFE6F003C676F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					177CC6DA2BDBFE6F003C676F = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					177CC6F32BDBFE75003C676F = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 177CC6DA2BDBFE6F003C676F;
+					};
+					177CC6FD2BDBFE75003C676F = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 177CC6DA2BDBFE6F003C676F;
+					};
+				};
+			};
+			buildConfigurationList = 177CC6D62BDBFE6F003C676F /* Build configuration list for PBXProject "rahberapp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 177CC6D22BDBFE6F003C676F;
+			productRefGroup = 177CC6DC2BDBFE6F003C676F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				177CC6DA2BDBFE6F003C676F /* rahberapp */,
+				177CC6F32BDBFE75003C676F /* rahberappTests */,
+				177CC6FD2BDBFE75003C676F /* rahberappUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		177CC6D92BDBFE6F003C676F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				177CC6EE2BDBFE74003C676F /* LaunchScreen.storyboard in Resources */,
+				177CC6EB2BDBFE74003C676F /* Assets.xcassets in Resources */,
+				177CC6E62BDBFE6F003C676F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		177CC6F22BDBFE75003C676F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		177CC6FC2BDBFE75003C676F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		177CC6D72BDBFE6F003C676F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				177CC7192BDC17CA003C676F /* CourseTableViewCell.swift in Sources */,
+				177CC71B2BDC20AB003C676F /* CustomCollectionViewCell.swift in Sources */,
+				179D12092BDD77A90031BB03 /* LoginviewController.swift in Sources */,
+				177CC6E32BDBFE6F003C676F /* ViewController.swift in Sources */,
+				177CC7172BDC0967003C676F /* Course.swift in Sources */,
+				177E59F32BDC5AD60005F0DD /* Enrollment.swift in Sources */,
+				177CC6DF2BDBFE6F003C676F /* AppDelegate.swift in Sources */,
+				177CC7152BDC0956003C676F /* User.swift in Sources */,
+				177CC6E12BDBFE6F003C676F /* SceneDelegate.swift in Sources */,
+				177CC71D2BDC2E1C003C676F /* DetailViewController.swift in Sources */,
+				177CC6E92BDBFE6F003C676F /* rahberapp.xcdatamodeld in Sources */,
+				177CC7132BDC05BC003C676F /* MockPrototype.swift in Sources */,
+				179D120B2BDD8A160031BB03 /* ProfileViewController.swift in Sources */,
+				177E59EF2BDC516F0005F0DD /* Chapter.swift in Sources */,
+				177E59F12BDC581C0005F0DD /* ChapterTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		177CC6F02BDBFE75003C676F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				177CC6F92BDBFE75003C676F /* rahberappTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		177CC6FA2BDBFE75003C676F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				177CC7052BDBFE75003C676F /* rahberappUITestsLaunchTests.swift in Sources */,
+				177CC7032BDBFE75003C676F /* rahberappUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		177CC6F62BDBFE75003C676F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 177CC6DA2BDBFE6F003C676F /* rahberapp */;
+			targetProxy = 177CC6F52BDBFE75003C676F /* PBXContainerItemProxy */;
+		};
+		177CC7002BDBFE75003C676F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 177CC6DA2BDBFE6F003C676F /* rahberapp */;
+			targetProxy = 177CC6FF2BDBFE75003C676F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		177CC6E42BDBFE6F003C676F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				177CC6E52BDBFE6F003C676F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		177CC6EC2BDBFE74003C676F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				177CC6ED2BDBFE74003C676F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		177CC7062BDBFE75003C676F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		177CC7072BDBFE75003C676F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		177CC7092BDBFE75003C676F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T3WF4L28RR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = rahberapp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chinnu.-rahberapp.rahberapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		177CC70A2BDBFE75003C676F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T3WF4L28RR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = rahberapp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chinnu.-rahberapp.rahberapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		177CC70C2BDBFE75003C676F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T3WF4L28RR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chinnu.-rahberapp.rahberappTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rahberapp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/rahberapp";
+			};
+			name = Debug;
+		};
+		177CC70D2BDBFE75003C676F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T3WF4L28RR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chinnu.-rahberapp.rahberappTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rahberapp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/rahberapp";
+			};
+			name = Release;
+		};
+		177CC70F2BDBFE75003C676F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T3WF4L28RR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chinnu.-rahberapp.rahberappUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = rahberapp;
+			};
+			name = Debug;
+		};
+		177CC7102BDBFE75003C676F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T3WF4L28RR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chinnu.-rahberapp.rahberappUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = rahberapp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		177CC6D62BDBFE6F003C676F /* Build configuration list for PBXProject "rahberapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				177CC7062BDBFE75003C676F /* Debug */,
+				177CC7072BDBFE75003C676F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		177CC7082BDBFE75003C676F /* Build configuration list for PBXNativeTarget "rahberapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				177CC7092BDBFE75003C676F /* Debug */,
+				177CC70A2BDBFE75003C676F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		177CC70B2BDBFE75003C676F /* Build configuration list for PBXNativeTarget "rahberappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				177CC70C2BDBFE75003C676F /* Debug */,
+				177CC70D2BDBFE75003C676F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		177CC70E2BDBFE75003C676F /* Build configuration list for PBXNativeTarget "rahberappUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				177CC70F2BDBFE75003C676F /* Debug */,
+				177CC7102BDBFE75003C676F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		177CC6E72BDBFE6F003C676F /* rahberapp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				177CC6E82BDBFE6F003C676F /* rahberapp.xcdatamodel */,
+			);
+			currentVersion = 177CC6E82BDBFE6F003C676F /* rahberapp.xcdatamodel */;
+			path = rahberapp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 177CC6D32BDBFE6F003C676F /* Project object */;
+}
