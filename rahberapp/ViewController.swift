@@ -73,9 +73,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // Retrieve the course object from the coursesList array based on the current indexPath
         let item = coursesList[indexPath.row]
         
-        // Set the title label , subtitle and iconImageView of the cell to the name of the course, duration and image
+        // Set the title label , subtitle and iconImageView of the cell to the name of the course, tutor and image
         cell.titleLabel?.text = item.name
-        cell.subtitleLabel?.text = item.duration
+        cell.subtitleLabel?.text = "Tutor: \(item.tutor)"
         cell.iconImageView?.image = UIImage(named: item.courseImage)
         return cell
     }
@@ -97,9 +97,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CustomCollectionViewCell1", for: indexPath) as! CustomCollectionViewCell
         let item = coursesList[indexPath.row]
         
-        // Set the title label , subtitle and iconImageView of the cell to the name of the course, duration and image
+        // Set the title label , subtitle and iconImageView of the cell to the name of the course, instrucorname and image
         cell.titleCLabel?.text = item.name
-        cell.subtitleCLabel?.text = item.duration
+        cell.subtitleCLabel?.text =  "Tutor: \(item.tutor)"
         cell.iconCImageView?.image = UIImage(named: item.courseImage)
         return cell
     }

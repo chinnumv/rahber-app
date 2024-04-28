@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="11G-Db-xSi">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="logo" highlightedImage="logo" translatesAutoresizingMaskIntoConstraints="NO" id="11G-Db-xSi">
                                 <rect key="frame" x="121.66666666666669" y="351" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="FIn-wC-NS2"/>
@@ -24,8 +24,8 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rahber App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEx-x4-a1I">
-                                <rect key="frame" x="127.66666666666669" y="516" width="138" height="32.666666666666629"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                <rect key="frame" x="115" y="516" width="163" height="39.666666666666629"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="29"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
