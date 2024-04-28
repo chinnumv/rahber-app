@@ -25,16 +25,24 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         titleLabel.text = "Educate Yourself!"
         descriptionLabel.text = "Education is the key to unlocking your potential.!"
         
+        // Set the data source and delegate for the table view
         courseListTableView.dataSource = self
         courseListTableView.delegate = self
+        
+        // Set the data source and delegate for the collection view
         courseListCView.dataSource = self
         courseListCView.delegate = self
         
+        // Create a layout for the collection view with horizontal scrolling
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal // Set the scroll direction to horizontal
         courseListCView.collectionViewLayout = layout
+        
+        // Register the table view cell class  and colliection view cell classfor reuse
         courseListTableView.register(CourseTableViewCell.self, forCellReuseIdentifier: "cellIdentifier1")
         courseListCView.register(CustomCollectionViewCell.self, forCellWithReuseIdentifier: "CustomCellIdentifier1")
+        
+        // Fetch courses from the course service
         courseService = MockCourseService()
         courseService?.getCourses(completion: { result  in
             switch result {
@@ -46,7 +54,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             
             
         })
-        // Do any additional setup after loading the view.
+        
     }
     
     // MARK: - UITableViewDelegate Methods
@@ -61,7 +69,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CourseTableViewCell", for: indexPath) as! CourseTableViewCell
+        
+        // Retrieve the course object from the coursesList array based on the current indexPath
         let item = coursesList[indexPath.row]
+        
+        // Set the title label , subtitle and iconImageView of the cell to the name of the course, duration and image
         cell.titleLabel?.text = item.name
         cell.subtitleLabel?.text = item.duration
         cell.iconImageView?.image = UIImage(named: item.courseImage)
@@ -84,6 +96,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CustomCollectionViewCell1", for: indexPath) as! CustomCollectionViewCell
         let item = coursesList[indexPath.row]
+        
+        // Set the title label , subtitle and iconImageView of the cell to the name of the course, duration and image
         cell.titleCLabel?.text = item.name
         cell.subtitleCLabel?.text = item.duration
         cell.iconCImageView?.image = UIImage(named: item.courseImage)
@@ -99,8 +113,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         // Handle item selection here
+        
         let selectedItem = coursesList[indexPath.item]
-        print("Selected item: \(selectedItem)")
+        
+        // Perform a segue with the specified identifier to transition to the detail view controller
         performSegue(withIdentifier: "detailviewSegue", sender: selectedItem.id)
         
         
@@ -108,8 +124,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "detailviewSegue" {
-            // If you need to pass data to the destination view controller, you can do so here
             let destinationVC = segue.destination as! DetailViewController
+            //Set the id property of the destination view controller to the retrieved id
             destinationVC.id = sender as! Int
         }
     }

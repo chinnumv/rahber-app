@@ -122,11 +122,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="322" height="241"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="05u-Dw-Foy">
-                                                    <rect key="frame" x="8" y="8" width="306" height="153"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="05u-Dw-Foy">
+                                                    <rect key="frame" x="8" y="8" width="306" height="150"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="150" id="lwd-pi-6JV"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eK2-EY-Jkq">
-                                                    <rect key="frame" x="8" y="169" width="306" height="21"/>
+                                                    <rect key="frame" x="8" y="166" width="306" height="24"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -639,7 +642,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="OJC-ha-5Ck"/>
+        <segue reference="kaM-zm-269"/>
         <segue reference="bcL-qm-nWL"/>
     </inferredMetricsTieBreakers>
     <resources>

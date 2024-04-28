@@ -31,6 +31,8 @@ class LoginViewController : UIViewController{
             showAlertview(message: "Please Enter username and password")
         }
         else{
+            
+            //  checking login details
             if let data = userService?.getUserWithEmail(forEmail: usernameTextField.text!, forPassword: passwordTextField.text!){
                 UserDefaults.standard.set(data.email, forKey: "loginEmail")
                 UserDefaults.standard.set(data.name, forKey: "loginName")
@@ -46,6 +48,7 @@ class LoginViewController : UIViewController{
         }
     }
     
+    // This function to show the message
     func showAlertview(message : String){
         let alert = UIAlertController(title: "Alert", message: message, preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))

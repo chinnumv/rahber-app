@@ -30,10 +30,13 @@ class DetailViewController : UIViewController, UITableViewDataSource, UITableVie
         super.viewDidLoad()
         courseService = MockCourseService()
         chapterService = MockChapterService()
+        
+        // Set the data source and delegate for the table view
         chapterListTableView.dataSource = self
         chapterListTableView.delegate = self
         chapterListTableView.register(ChapterTableViewCell.self, forCellReuseIdentifier: "cellidentifier")
-        
+       
+        // Fetch course details from the course service based on course iD
         if let data = courseService?.getCoursesWithID(forID:  id) {
             print("Found object with ID 2: \(data)")
             titleLabel.text = data.name
@@ -46,6 +49,7 @@ class DetailViewController : UIViewController, UITableViewDataSource, UITableVie
             
         }
         
+        // Fetch all chapters  from the chapter service based on course iD
         if let data = chapterService?.getChaptersWithID(forID:  id) {
             chapterList = data;
         } else {
@@ -106,7 +110,7 @@ class DetailViewController : UIViewController, UITableViewDataSource, UITableVie
         let isLoggedIn = UserDefaults.standard.bool(forKey: "isLogin")
         if(isLoggedIn){
             if let decodedData = UserDefaults.standard.data(forKey: "enrolledCourses") {
-                // Convert the data back to array
+                //  checking user is already enrolled the course and set user defailt
                 if let decodedArray = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(decodedData) as? [Int] {
                     var myArray = decodedArray
                     myArray.append(id)
@@ -140,7 +144,7 @@ class DetailViewController : UIViewController, UITableViewDataSource, UITableVie
         }
     }
     
-    // Method for showing alert
+    // This function to show the message
     func showAlertview(message : String){
         let alert = UIAlertController(title: "Alert", message: message, preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))

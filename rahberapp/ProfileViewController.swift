@@ -33,7 +33,7 @@ class ProfileViewController : UIViewController, UITableViewDataSource, UITableVi
             print("Username: \(email)")
             emailLabel.text = email
         }
-        
+        //  Rereiving all enrolled courses for tyhe user
         let isLoggedIn = UserDefaults.standard.bool(forKey: "isLogin")
         if(isLoggedIn){
             if let decodedData = UserDefaults.standard.data(forKey: "enrolledCourses") {
@@ -41,6 +41,7 @@ class ProfileViewController : UIViewController, UITableViewDataSource, UITableVi
                 if let decodedArray = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(decodedData) as? [Int] {
                     var myArray = decodedArray
                     for id in myArray {
+                        //  Rereiving all enrolled courses for tyhe user
                         if let data = courseService?.getCoursesWithID(forID:  id) {
                             coursesList.append(data)
                         }
@@ -68,8 +69,6 @@ class ProfileViewController : UIViewController, UITableViewDataSource, UITableVi
         cell.iconImageView?.image = UIImage(named: item.courseImage)
         return cell
     }
-    
-    // MARK: - UITableViewDelegate Methods
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedItem = coursesList[indexPath.item]
